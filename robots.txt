@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erinckonat.github.io/mplus-training-studio/sitemap.xml
