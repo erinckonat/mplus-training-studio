@@ -28,16 +28,16 @@
   --bg:        #16130F;
   --surface:   #211C16;
   --surface-2: #2A241C;
-  --paper:     #F4EFE7;
-  --paper-60:  #C9BFAF;
-  --paper-40:  #948A78;
+  --paper:     #FFFFFF;
+  --paper-60:  rgba(255,255,255,.72);
+  --paper-40:  rgba(255,255,255,.46);
   --gold:      #F2B347;
   --gold-d:    #D99A2E;
   --magenta:   #C832B2;
   --orange:    #F0793D;
   --on-gold:   #17130F;
-  --line:      rgba(244,239,231,.12);
-  --line-soft: rgba(244,239,231,.07);
+  --line:      rgba(255,255,255,.16);
+  --line-soft: rgba(255,255,255,.09);
 
   --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px;
   --s5: 48px; --s6: 64px; --s7: 96px; --s8: 128px;
@@ -204,9 +204,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 .hero{ padding-block: var(--s6) var(--s7); }
 @media (min-width: 900px){ .hero{ padding-block: var(--s7) var(--s8); } }
 .hero__copy{ grid-column: 1 / span 12; }
-.hero__intro{ max-width: 46ch; }
-.hero__title{ font-size: clamp(3rem, 9vw, 6.5rem); margin-block: var(--s3) var(--s3); }
-.hero__sub{ font-size: 18px; }
+.hero__intro{ max-width: 780px; }
+.hero__title{ font-size: clamp(2.5rem, 6.2vw, 4.5rem); margin-block: var(--s3) var(--s3); max-width: 780px; }
+.hero__sub{ font-size: 18px; max-width: 46ch; }
 .hero__actions{ display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3); margin-top: var(--s5); }
 .hero__services{
   list-style: none; margin: var(--s6) 0 0; padding-top: var(--s5);
@@ -395,7 +395,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <a href="#nasil">Nasıl Başlanır</a>
       <a href="#konum">Konum</a>
     </nav>
-    <a class="btn btn--gold nav__cta" href="#iletisim">Randevu al</a>
+    <a class="btn btn--gold nav__cta" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a>
     <button class="nav__toggle" id="menuOpen" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
   </div>
 </header>
@@ -418,7 +418,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <li><a href="#nasil" data-menu-link>Nasıl Başlanır</a></li>
       <li><a href="#konum" data-menu-link>Konum</a></li>
     </ul>
-    <div class="menu__foot"><a class="btn btn--gold" href="#iletisim" data-menu-link>Randevu al</a></div>
+    <div class="menu__foot"><a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a></div>
   </div>
 </div>
 
@@ -431,10 +431,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <div class="hero__copy">
         <div class="hero__intro">
           <p class="pill">{{icon:map-pin}} Koşuyolu, Kadıköy</p>
-          <h1 class="display hero__title">Pilates'ten <span class="accent">fazlası.</span></h1>
-          <p class="hero__sub">Kişisel antrenörlük, pilates, fonksiyonel ve kardiyo antrenman aynı stüdyoda. Program kişiye özel kurulur, sonuç ölçülür.</p>
+          <h1 class="display hero__title">Kişisel antrenörlük ve <span class="accent">pilates.</span></h1>
+          <p class="hero__sub">Koşuyolu'ndaki stüdyomuzda kişisel antrenörlük, pilates, fonksiyonel ve kardiyo antrenman veriyoruz. Program kişiye göre hazırlanır.</p>
           <div class="hero__actions">
-            <a class="btn btn--gold" href="#iletisim">Randevu al {{icon:arrow-right}}</a>
+            <a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al {{icon:arrow-right}}</a>
             <a class="link" href="#hizmetler">Hizmetler {{icon:arrow-right}}</a>
           </div>
         </div>
@@ -455,8 +455,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <img src="assets/img/studyo.jpg" width="1600" height="1200" alt="Mplus Training Studio salonu; fonksiyonel ekipman, kardiyo alanı ve mat pilates bölümü" loading="lazy" decoding="async">
       </div>
       <div class="venue__text">
-        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:var(--s2)">Koşuyolu'nda tek bir stüdyo.</h2>
-        <p class="lede">Fonksiyonel antrenman alanı, kardiyo ekipmanları ve pilates bölümü aynı çatı altında. Program türü değişse de mekan aynı, eğitmen aynı.</p>
+        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:var(--s2)">Koşuyolu'ndaki stüdyomuz.</h2>
+        <p class="lede">Fonksiyonel antrenman alanı, kardiyo ekipmanları ve pilates bölümü aynı stüdyoda yer alır.</p>
       </div>
     </div>
   </section>
@@ -466,23 +466,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
     <div class="wrap">
       <div class="approach__head reveal">
         <p class="pill">{{icon:target}} Yaklaşım</p>
-        <h2 class="display h2" style="margin-top:var(--s3)">Programı size göre kurarız.</h2>
+        <h2 class="display h2" style="margin-top:var(--s3)">Program kişiye göre hazırlanır.</h2>
       </div>
       <ul class="approach__list">
         <li class="approach__item reveal">
           {{icon:target}}
           <h3>Kişiye özel</h3>
-          <p>Hazır bir plana değil, hedefinize ve mevcut durumunuza göre kurulan bir programa girersiniz.</p>
+          <p>Program hedefe ve mevcut duruma göre hazırlanır; hazır bir şablon kullanılmaz.</p>
         </li>
         <li class="approach__item reveal" style="--i:1">
           {{icon:chart-line-up}}
           <h3>Ölçülebilir sonuç</h3>
-          <p>Vücut analiz ölçümüyle başlarsınız; ilerlemeyi tahmine değil rakama dayanarak takip edersiniz.</p>
+          <p>Vücut analiz ölçümüyle başlanır; ilerleme rakamla takip edilir.</p>
         </li>
         <li class="approach__item reveal" style="--i:2">
           {{icon:heartbeat}}
           <h3>Kombine yöntem</h3>
-          <p>Kişisel antrenörlük, pilates ve fonksiyonel/kardiyo antrenman aynı programın parçası olabilir.</p>
+          <p>Kişisel antrenörlük, pilates ve fonksiyonel/kardiyo antrenman aynı program içinde birleştirilebilir.</p>
         </li>
       </ul>
     </div>
@@ -499,7 +499,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <article class="service service--feature reveal">
           {{icon:barbell}}
           <h3>Kişisel Antrenörlük</h3>
-          <p>Eğitmenle bire bir çalışılır. Program tamamen hedefinize göre kurulur; teknik, tempo ve yük kişiye özeldir.</p>
+          <p>Eğitmenle birebir çalışılır. Program hedefe göre kurulur; teknik, tempo ve yük kişiye özel belirlenir.</p>
         </article>
         <article class="service reveal" style="--i:1">
           {{icon:person-simple-tai-chi}}
@@ -509,12 +509,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <article class="service reveal" style="--i:2">
           {{icon:heartbeat}}
           <h3>Fonksiyonel &amp; Kardiyo</h3>
-          <p>Günlük harekete taşınan güç ve dayanıklılık çalışması; kardiyovasküler kapasiteyi de içerir.</p>
+          <p>Güç ve dayanıklılık çalışmasıdır; kardiyovasküler kapasiteyi de içerir.</p>
         </article>
         <article class="service reveal" style="--i:3">
           {{icon:ruler}}
           <h3>Vücut Analizi</h3>
-          <p>Beden kompozisyon ölçümüyle başlangıç noktanızı belirler, ilerlemeyi düzenli olarak takip ederiz.</p>
+          <p>Beden kompozisyon ölçümüyle başlangıç noktası belirlenir, ilerleme düzenli olarak takip edilir.</p>
         </article>
       </div>
     </div>
@@ -563,7 +563,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
     <div class="wrap grid">
       <div class="contact__title reveal">
         <p class="contact__eyebrow">Randevu</p>
-        <h2 class="display h2">Bize yazın, programınızı konuşalım.</h2>
+        <h2 class="display h2">Randevu ve bilgi.</h2>
         <p class="lede">Uygun saat ve program için WhatsApp'tan yazabilir ya da telefonla ulaşabilirsiniz.</p>
       </div>
       <div class="contact__actions reveal" style="--i:1">
@@ -614,7 +614,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 </footer>
 
 <div class="dock" id="dock" data-shown="false">
-  <a class="btn btn--gold" href="#iletisim">Randevu al</a>
+  <a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a>
 </div>
 
 <script type="application/ld+json">

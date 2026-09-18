@@ -37,16 +37,16 @@
   --bg:        #16130F;
   --surface:   #211C16;
   --surface-2: #2A241C;
-  --paper:     #F4EFE7;
-  --paper-60:  #C9BFAF;
-  --paper-40:  #948A78;
+  --paper:     #FFFFFF;
+  --paper-60:  rgba(255,255,255,.72);
+  --paper-40:  rgba(255,255,255,.46);
   --gold:      #F2B347;
   --gold-d:    #D99A2E;
   --magenta:   #C832B2;
   --orange:    #F0793D;
   --on-gold:   #17130F;
-  --line:      rgba(244,239,231,.12);
-  --line-soft: rgba(244,239,231,.07);
+  --line:      rgba(255,255,255,.16);
+  --line-soft: rgba(255,255,255,.09);
 
   --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px;
   --s5: 48px; --s6: 64px; --s7: 96px; --s8: 128px;
@@ -213,9 +213,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 .hero{ padding-block: var(--s6) var(--s7); }
 @media (min-width: 900px){ .hero{ padding-block: var(--s7) var(--s8); } }
 .hero__copy{ grid-column: 1 / span 12; }
-.hero__intro{ max-width: 46ch; }
-.hero__title{ font-size: clamp(3rem, 9vw, 6.5rem); margin-block: var(--s3) var(--s3); }
-.hero__sub{ font-size: 18px; }
+.hero__intro{ max-width: 780px; }
+.hero__title{ font-size: clamp(2.5rem, 6.2vw, 4.5rem); margin-block: var(--s3) var(--s3); max-width: 780px; }
+.hero__sub{ font-size: 18px; max-width: 46ch; }
 .hero__actions{ display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3); margin-top: var(--s5); }
 .hero__services{
   list-style: none; margin: var(--s6) 0 0; padding-top: var(--s5);
@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <a href="#nasil">Nasıl Başlanır</a>
       <a href="#konum">Konum</a>
     </nav>
-    <a class="btn btn--gold nav__cta" href="#iletisim">Randevu al</a>
+    <a class="btn btn--gold nav__cta" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a>
     <button class="nav__toggle" id="menuOpen" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
   </div>
 </header>
@@ -427,7 +427,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <li><a href="#nasil" data-menu-link>Nasıl Başlanır</a></li>
       <li><a href="#konum" data-menu-link>Konum</a></li>
     </ul>
-    <div class="menu__foot"><a class="btn btn--gold" href="#iletisim" data-menu-link>Randevu al</a></div>
+    <div class="menu__foot"><a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a></div>
   </div>
 </div>
 
@@ -440,10 +440,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
       <div class="hero__copy">
         <div class="hero__intro">
           <p class="pill"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg> Koşuyolu, Kadıköy</p>
-          <h1 class="display hero__title">Pilates'ten <span class="accent">fazlası.</span></h1>
-          <p class="hero__sub">Kişisel antrenörlük, pilates, fonksiyonel ve kardiyo antrenman aynı stüdyoda. Program kişiye özel kurulur, sonuç ölçülür.</p>
+          <h1 class="display hero__title">Kişisel antrenörlük ve <span class="accent">pilates.</span></h1>
+          <p class="hero__sub">Koşuyolu'ndaki stüdyomuzda kişisel antrenörlük, pilates, fonksiyonel ve kardiyo antrenman veriyoruz. Program kişiye göre hazırlanır.</p>
           <div class="hero__actions">
-            <a class="btn btn--gold" href="#iletisim">Randevu al <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+            <a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
             <a class="link" href="#hizmetler">Hizmetler <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
           </div>
         </div>
@@ -464,8 +464,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <img src="assets/img/studyo.jpg" width="1600" height="1200" alt="Mplus Training Studio salonu; fonksiyonel ekipman, kardiyo alanı ve mat pilates bölümü" loading="lazy" decoding="async">
       </div>
       <div class="venue__text">
-        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:var(--s2)">Koşuyolu'nda tek bir stüdyo.</h2>
-        <p class="lede">Fonksiyonel antrenman alanı, kardiyo ekipmanları ve pilates bölümü aynı çatı altında. Program türü değişse de mekan aynı, eğitmen aynı.</p>
+        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:var(--s2)">Koşuyolu'ndaki stüdyomuz.</h2>
+        <p class="lede">Fonksiyonel antrenman alanı, kardiyo ekipmanları ve pilates bölümü aynı stüdyoda yer alır.</p>
       </div>
     </div>
   </section>
@@ -475,23 +475,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
     <div class="wrap">
       <div class="approach__head reveal">
         <p class="pill"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"/></svg> Yaklaşım</p>
-        <h2 class="display h2" style="margin-top:var(--s3)">Programı size göre kurarız.</h2>
+        <h2 class="display h2" style="margin-top:var(--s3)">Program kişiye göre hazırlanır.</h2>
       </div>
       <ul class="approach__list">
         <li class="approach__item reveal">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"/></svg>
           <h3>Kişiye özel</h3>
-          <p>Hazır bir plana değil, hedefinize ve mevcut durumunuza göre kurulan bir programa girersiniz.</p>
+          <p>Program hedefe ve mevcut duruma göre hazırlanır; hazır bir şablon kullanılmaz.</p>
         </li>
         <li class="approach__item reveal" style="--i:1">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V156.69l50.34-50.35a8,8,0,0,1,11.32,0L128,132.69,180.69,80H160a8,8,0,0,1,0-16h40a8,8,0,0,1,8,8v40a8,8,0,0,1-16,0V91.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31l-56,56V200H224A8,8,0,0,1,232,208Z"/></svg>
           <h3>Ölçülebilir sonuç</h3>
-          <p>Vücut analiz ölçümüyle başlarsınız; ilerlemeyi tahmine değil rakama dayanarak takip edersiniz.</p>
+          <p>Vücut analiz ölçümüyle başlanır; ilerleme rakamla takip edilir.</p>
         </li>
         <li class="approach__item reveal" style="--i:2">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M72,144H32a8,8,0,0,1,0-16H67.72l13.62-20.44a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,128h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,126.42l-9.34,14A8,8,0,0,1,72,144ZM178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40Z"/></svg>
           <h3>Kombine yöntem</h3>
-          <p>Kişisel antrenörlük, pilates ve fonksiyonel/kardiyo antrenman aynı programın parçası olabilir.</p>
+          <p>Kişisel antrenörlük, pilates ve fonksiyonel/kardiyo antrenman aynı program içinde birleştirilebilir.</p>
         </li>
       </ul>
     </div>
@@ -508,7 +508,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <article class="service service--feature reveal">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z"/></svg>
           <h3>Kişisel Antrenörlük</h3>
-          <p>Eğitmenle bire bir çalışılır. Program tamamen hedefinize göre kurulur; teknik, tempo ve yük kişiye özeldir.</p>
+          <p>Eğitmenle birebir çalışılır. Program hedefe göre kurulur; teknik, tempo ve yük kişiye özel belirlenir.</p>
         </article>
         <article class="service reveal" style="--i:1">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80A32,32,0,1,0,96,48,32,32,0,0,0,128,80Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,128,32Zm96,72a8,8,0,0,1-8,8H136v26.72l51.15,21.93A8,8,0,0,1,192,168v48a8,8,0,0,1-16,0V173.28l-46.45-19.91L53.35,222a8,8,0,1,1-10.7-11.9L120,140.44V112H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,104Z"/></svg>
@@ -518,12 +518,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
         <article class="service reveal" style="--i:2">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M72,144H32a8,8,0,0,1,0-16H67.72l13.62-20.44a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,128h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,126.42l-9.34,14A8,8,0,0,1,72,144ZM178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40Z"/></svg>
           <h3>Fonksiyonel &amp; Kardiyo</h3>
-          <p>Günlük harekete taşınan güç ve dayanıklılık çalışması; kardiyovasküler kapasiteyi de içerir.</p>
+          <p>Güç ve dayanıklılık çalışmasıdır; kardiyovasküler kapasiteyi de içerir.</p>
         </article>
         <article class="service reveal" style="--i:3">
           <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M235.32,73.37,182.63,20.69a16,16,0,0,0-22.63,0L20.68,160a16,16,0,0,0,0,22.63l52.69,52.68a16,16,0,0,0,22.63,0L235.32,96A16,16,0,0,0,235.32,73.37ZM84.68,224,32,171.31l32-32,26.34,26.35a8,8,0,0,0,11.32-11.32L75.31,128,96,107.31l26.34,26.35a8,8,0,0,0,11.32-11.32L107.31,96,128,75.31l26.34,26.35a8,8,0,0,0,11.32-11.32L139.31,64l32-32L224,84.69Z"/></svg>
           <h3>Vücut Analizi</h3>
-          <p>Beden kompozisyon ölçümüyle başlangıç noktanızı belirler, ilerlemeyi düzenli olarak takip ederiz.</p>
+          <p>Beden kompozisyon ölçümüyle başlangıç noktası belirlenir, ilerleme düzenli olarak takip edilir.</p>
         </article>
       </div>
     </div>
@@ -572,7 +572,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
     <div class="wrap grid">
       <div class="contact__title reveal">
         <p class="contact__eyebrow">Randevu</p>
-        <h2 class="display h2">Bize yazın, programınızı konuşalım.</h2>
+        <h2 class="display h2">Randevu ve bilgi.</h2>
         <p class="lede">Uygun saat ve program için WhatsApp'tan yazabilir ya da telefonla ulaşabilirsiniz.</p>
       </div>
       <div class="contact__actions reveal" style="--i:1">
@@ -623,7 +623,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 </footer>
 
 <div class="dock" id="dock" data-shown="false">
-  <a class="btn btn--gold" href="#iletisim">Randevu al</a>
+  <a class="btn btn--gold" href="https://wa.me/905546018795?text=Merhaba%2C%20Mplus%20Training%20Studio%27dan%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Randevu al</a>
 </div>
 
 <script type="application/ld+json">
